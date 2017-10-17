@@ -4,7 +4,7 @@
 #### Fraunhofer Institute
 <br>
 <br>
-<span style="color: #bbb; font-size: 80%">[ GitHub, GitLab, Bitbucket, GitBucket, Gitea, Gogs ]</span>
+<span style="color: #bbb; font-size: 80%">[Institute for Production Systems and Design Technology]</span>
 
 
 ---
@@ -44,7 +44,7 @@ De nombreuses publications.
 ### Employés à <span style="color: #e49436">Fraunhofer</span>
 
 - Stagiaire
-- Étudiants
+- Étudiants / Pratikant
 - Diplômé, administration, maintenance;
 
 Note:
@@ -64,7 +64,7 @@ Diplomé: diriger, trouver des partenaires et financement etc.
 
 - Gestion entreprise
 - <span style="color: #e49436">Création virtuelle produit</span>
-- Sustème production
+- Système production
 - Assemblage / revêtement
 - Automatisation
 - Qualité
@@ -73,18 +73,6 @@ Note:
 Très bonne ambiance, bière dans tous les bureaux.
 Entreprise ouverte tout le temps
 Horraires très très flexibles
-
----
-@title[Un modèle qui marche]
-
-### Un modèle qui marche
-- <span style="color: #e49436">Le modèle Fraunhofer</span>
-- Contrats d'entreprises
-- Contrats public
-- Budget: <span style="color: #e49436">2,1 milliards</span> d'euros <span style="color: #e49436">(2015)</span>
-
-Note:
-Financement 30% par état et le reste par contrats
 
 ---
 @title[Aile de recherche]
@@ -189,13 +177,13 @@ __kernel void satTriangleAABBKernel(
 		}
 	}
 }
-````
+```
 
 Note:
 Implémentation du SAT dans un Kernel OpenCL.
 
 ---
-@title[Example 2 ]
+@title[Example 2]
 
 ###Exemple - <span style="color: #e49436">Manage OpenCL</span>
 
