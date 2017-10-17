@@ -16,18 +16,78 @@
 - Gestion de projet
 - Tâches réalisées
 - Conclusion
-<br>
-<span style="color:gray; font-size:0.6em;">[ JUST LIKE THIS ONE ]</span>
+
+---
+@title[Fraunhofer]
+
+#### 69 Instituts en Allemagne
+#### Environ <span style="color: #e49436">24084 employés (décembre 2015)</span>
+
+Note:
+Il existe également des instituts à l'étranger.
+- Chaque institut possède des domaines de recherches
+---
+@title[Célèbre]
+
+#### Quelques faits célèbres de Fraunhofer
+
+- Algorithme de compression MP3
+- Participation à la création de l'AAC
+- Records pour panneaux solaires
+
+Note:
+MP3: Karlheinz Brandenburg
+De nombreuses publications.
+---
+@title[Employé à Fraunhofer]
+
+### Employés à Fraunhofer
+
+- Stagiaire
+- Étudiants
+- Diplômé, administration, maintenance;
+
+Note:
+Stagiaire : 2% des employés, 3 mois / 6 ou 1 an.
+Travail sous un ou plusieurs scientifiques, projet public ou privé.
+Étudiants: 28%
+Diplomé: diriger, trouver des partenaires et financement etc.
+
+---
+@title[Organisation à Fraunhofer]
+
+### Dirigé par un professeur
+- Eckart Uhlmann dirige IPK Fraunhofer
+### Branches
+- Gestion entreprise
+- Création virtuelle produit
+- Sustème production
+- Assemblage / revêtement
+- Automatisation
+- Qualité
+
+Note:
+Très bonne ambiance, bière dans tous les bureaux.
+Entreprise ouverte tout le temps
+Horraires très très flexibles
+
+---
+@title[Un modèle qui marche]
+
+### Un modèle qui marche
+- Le modèle Fraunhofer
+- Contrats d'entreprises
+- Contrats public
+- Budget: 2,1 milliards d'euros (2015)
+
+### Branches
+Infustrie 4.0 - 2020
+
+Note:
+Financement 30% par état et le reste par contrats
 
 ---
 
-#### No more <span style="color: gray">Keynote.</span>
-#### No more <span style="color: gray">Powerpoint.</span>
-<br>
-#### Just <span style="color: #e49436">Markdown</span>.
-#### Then <span style="color: #e49436">Git-Commit</span>.
-
----
 @title[Step 1. Create 'PITCHME.md']
 
 ### <span style="color: #e49436">STEP 1. Create 'PITCHME.md'</span>
