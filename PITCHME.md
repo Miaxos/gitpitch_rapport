@@ -130,7 +130,37 @@ Un <span style="color: #e49436">prototype</span> fait sous Unity qui devait perm
 - Intégration dans la solution
 
 ---
-@title[Step 1. Create 'PITCHME.md']
+@title[Accélération]
+
+### Système de collision
+
+- Problèmes de performances
+- CPU surchargé
+- Utilisation du GPU via <span style="color: #e49436">OpenCL</span>
+- Différentes accélération à l'aide d'arbres
+
+---
+@title[OpenCL impl]
+
+### OpenCL
+
+- Mise en place de classe pour utilisation
+- Gestion (presque) automatique de la mémoire
+- Mise en place d'exemples pour l'utilisation
+
+---
+@title[OpenCL]
+
+###OpenCL
+
+- Utilisation pour augmenter performances
+- SAT <span style="color: #e49436">(Separate Axis Algorithm)</span>
+
+
+---
+@title[Example]
+
+###Exemple - <span style="color: #e49436">SAT</span>
 
 ```c
 __kernel void satTriangleAABBKernel(
@@ -156,11 +186,87 @@ __kernel void satTriangleAABBKernel(
 			atomic_add(&result[0], 1);
 			break;			
 		}
-		
-		
 	}
 }
 ````
+
+Note:
+Implémentation du SAT dans un Kernel OpenCL.
+
+---
+@title[Example 2 ]
+
+###Exemple - <span style="color: #e49436">Manage OpenCL</span>
+
+```csharp
+public void copyFromBufferGPU(T src, int numElems, int destFirsElem=0, bool waitForCompletion=true)
+{
+/// <summary>
+/// Copy from a buffer to an array.
+/// </summary>
+    Debug.Assert(numElems+destFirsElem <= this.capacity);
+    
+    OpenCL.Net.Event clevent;
+    OpenCL.Net.ErrorCode status;
+
+    if (numElems + destFirsElem > 0)
+    {
+        int sizeInBytes = TypeSize<T>.SizeInt * numElems;
+        status = Cl.EnqueueWriteBuffer( this._queue, this.buffer, OpenCL.Net.Bool.True, (IntPtr)(TypeSize<T>.SizeInt*destFirsElem), (IntPtr)sizeInBytes, src, 0, null, out clevent);
+        CheckErr(status, "copyFromHostPointer");
+        if (waitForCompletion)
+        {
+            status = Cl.Finish(this._queue);
+            CheckErr(status, "copyFromHostPointer ClFinished");
+        }
+    }
+}
+```
+
+Note:
+manage OpenCL
+
+---
+@title[Raycast impl]
+
+### Dynamic occlusion
+
+- Mise en place raycast
+- Accélération arbre
+- Accélération OpenCL
+- Remise travail à un autre stagiaire
+
+---
+@title[Autre]
+
+### Autre
+
+- Reécriture de parties du code
+- Amélioration et optimisations
+- Correction de bugs
+- Tests
+
+---
+@title[Formations]
+
+### Formations
+
+- Formation de l'équipe et des stagiaires à <span style="color: #e49436">Git</span>
+- Formation conjointe au <span style="color: #e49436">scrum</span> du chef de projet
+- Formation d'autres membres de l'équipe sur des points informatiques
+<span style="color:gray; font-size:0.6em;">Exemple: Pointeurs, accélération par les arbres, POO et modularisation</span>
+
+---
+@title[Conclusion]
+
+### Conclusion
+
+- Très interessante au sein d'un organisme de recherche
+- Ambiance et entreprise absorbante, on y passe des heures
+- Stagiaire pas tout le temps "sous-catégorisé"
+- Sous-payé pour le travail effectué
+- Difficultés avec la langue
+
 ---
 @title[Step 1. Create 'PITCHME.md']
 
