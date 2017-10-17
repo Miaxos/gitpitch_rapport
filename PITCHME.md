@@ -17,11 +17,11 @@
 5. Tâches réalisées
 6. Conclusion
 
-footnote : "© 2016 One Tap Beyond Inc."
 
 ---
 @title[Fraunhofer]
 
+### Présentation de Fraunhofer
 #### <span style="color: #e49436">69</span> Instituts en Allemagne
 #### Environ <span style="color: #e49436">24084 employés (décembre 2015)</span>
 
