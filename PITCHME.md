@@ -17,6 +17,8 @@
 5. Tâches réalisées
 6. Conclusion
 
+footnote : "© 2016 One Tap Beyond Inc."
+
 ---
 @title[Fraunhofer]
 
