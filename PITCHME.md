@@ -187,7 +187,7 @@ Implémentation du SAT dans un Kernel OpenCL.
 ---
 @title[Example 2]
 
-###Exemple - <span style="color: #e49436">Manage OpenCL</span>
+### Exemple - <span style="color: #e49436">Manage OpenCL</span>
 
 ```csharp
 public void copyFromBufferGPU(T src, int numElems, int destFirsElem=0, bool waitForCompletion=true)
