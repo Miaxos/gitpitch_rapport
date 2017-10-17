@@ -10,17 +10,17 @@
 ---
 @title[Plan]
 
-- Présentation de Fraunhofer
-- Présentation de l'aile de recherche
-- Projet
-- Gestion de projet
-- Tâches réalisées
-- Conclusion
+1. Présentation de Fraunhofer
+2. Présentation de l'aile de recherche
+3. Projet
+4. Gestion de projet
+5. Tâches réalisées
+6. Conclusion
 
 ---
 @title[Fraunhofer]
 
-#### 69 Instituts en Allemagne
+#### <span style="color: #e49436">69</span> Instituts en Allemagne
 #### Environ <span style="color: #e49436">24084 employés (décembre 2015)</span>
 
 Note:
@@ -57,8 +57,11 @@ Diplomé: diriger, trouver des partenaires et financement etc.
 @title[Organisation à Fraunhofer]
 
 ### Dirigé par un professeur
-- Eckart Uhlmann dirige IPK Fraunhofer
+
+- <span style="color: #e49436">Eckart Uhlmann</span> dirige IPK Fraunhofer
+
 ### Branches
+
 - Gestion entreprise
 - Création virtuelle produit
 - Sustème production
@@ -78,16 +81,87 @@ Horraires très très flexibles
 - Le modèle Fraunhofer
 - Contrats d'entreprises
 - Contrats public
-- Budget: 2,1 milliards d'euros (2015)
-
-### Branches
-Infustrie 4.0 - 2020
+- Budget: <span style="color: #e49436">2,1 milliards</span> d'euros <span style="color: #e49436">(2015)</span>
 
 Note:
 Financement 30% par état et le reste par contrats
 
 ---
+@title[Aile de recherche]
 
+### Création virtuelle produit
+
+- Industrie 4.0
+- Réalitée virtuelle dans l'industrie
+- Réalitée augmentée dans l'industrie
+- <span style="color: #e49436">60 personnes</span>
+
+Note:
+Focus sur ces sujets, mais après d'autres projets étaient disponibles.
+- Industrie 4.0
+- Multitude de bureaux
+- Beaucoup de physiciens et ingénieurs
+
+---
+@title[Projet]
+
+### Projet
+
+Un <span style="color: #e49436">prototype</span> fait sous Unity qui devait permettre aux utilisateurs de <span style="color: #e49436">se connecter ensemble</span> et d'effectuer différentes <span style="color: #e49436">interactions</span> sur le modèle, <span style="color: #e49436">sauvegarder ces informations</span>, de façon simple et ergonomique en utilisant la réalité virtuelle.
+
+---
+@title[Gestion de projet]
+
+### Gestion de projet
+
+- Problèmes dûs à la non connaissance du chef de projet
+- Problèmes dûs à la non cohérence du projet
+- Problèmes dûs à l'absence du chef de projet
+
+---
+@title[Tâches réalisés]
+
+### Sujet de stage
+
+- <span style="color: #e49436">Système de collision</span>
+- État de l'art
+- Algorithmes à utiliser
+- Performances
+- Intégration dans la solution
+
+---
+@title[Step 1. Create 'PITCHME.md']
+
+```c
+__kernel void satTriangleAABBKernel(
+	int numTriangles,
+	int trianglesPerThread,
+	__global float4* meshVertices, 
+	__global int* meshTriangles,
+	__global float4* aabbVertices,
+	__global int* result
+	)
+{
+	int i = get_global_id(0);
+
+	for (int j = i*trianglesPerThread; j < (i+1)*trianglesPerThread && j < numTriangles; j++)
+	{
+		//getting triangle vertices
+		float4 triangleVertice0 = meshVertices[meshTriangles[3*j]];
+		float4 triangleVertice1 = meshVertices[meshTriangles[3*j + 1]];
+		float4 triangleVertice2 = meshVertices[meshTriangles[3*j + 2]];
+		
+		if (triangleIntersectsAabb(triangleVertice0, triangleVertice1, triangleVertice2, aabbVertices))
+		{
+			atomic_add(&result[0], 1);
+			break;			
+		}
+		
+		
+	}
+}
+````
+---
 @title[Step 1. Create 'PITCHME.md']
 
 ### <span style="color: #e49436">STEP 1. Create 'PITCHME.md'</span>
