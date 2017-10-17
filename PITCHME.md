@@ -142,7 +142,7 @@ Un <span style="color: #e49436">prototype</span> fait sous Unity qui devait perm
 ---
 @title[OpenCL]
 
-###OpenCL
+### OpenCL
 
 - Utilisation pour augmenter <span style="color: #e49436">performances</span>
 - SAT <span style="color: #e49436">(Separate Axis Algorithm)</span>
@@ -151,7 +151,7 @@ Un <span style="color: #e49436">prototype</span> fait sous Unity qui devait perm
 ---
 @title[Example]
 
-###Exemple - <span style="color: #e49436">SAT</span>
+### Exemple - <span style="color: #e49436">SAT</span>
 
 ```c
 __kernel void satTriangleAABBKernel(
