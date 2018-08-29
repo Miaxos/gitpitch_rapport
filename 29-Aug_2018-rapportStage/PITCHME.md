@@ -4,7 +4,7 @@
 #### Oui.SNCF
 <br>
 <br>
-<span style="color: #bbb; font-size: 80%">Tuteur: *****Laurent Michelet**</span>
+<span style="color: #bbb; font-size: 80%">Tuteur: **Laurent Michelet**</span>
 
 
 ---
