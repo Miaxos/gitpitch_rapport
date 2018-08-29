@@ -1,6 +1,7 @@
 @title[Introduction]
 # Rapport de <span style="color: #e49436">Stage</span>
 
+![](assets/oui.png)
 #### Oui.SNCF
 <br>
 <br>
